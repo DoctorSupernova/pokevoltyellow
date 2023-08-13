@@ -17,6 +17,7 @@
 #include "link_rfu.h"
 #include "load_save.h"
 #include "main.h"
+#include "map_preview.h"
 #include "menu.h"
 #include "mirage_tower.h"
 #include "metatile_behavior.h"
@@ -40,7 +41,6 @@ static void Task_ExitNonDoor(u8);
 static void Task_DoContestHallWarp(u8);
 static void FillPalBufferWhite(void);
 static void Task_ExitDoor(u8);
-static bool32 WaitForWeatherFadeIn(void);
 static void Task_SpinEnterWarp(u8 taskId);
 static void Task_WarpAndLoadMap(u8 taskId);
 static void Task_DoDoorWarp(u8 taskId);
@@ -67,7 +67,7 @@ static void FillPalBufferWhite(void)
     CpuFastFill16(RGB_WHITE, gPlttBufferFaded, PLTT_SIZE);
 }
 
-static void FillPalBufferBlack(void)
+void FillPalBufferBlack(void)
 {
     CpuFastFill16(RGB_BLACK, gPlttBufferFaded, PLTT_SIZE);
 }
@@ -101,14 +101,22 @@ void FadeInFromBlack(void)
 
 void WarpFadeOutScreen(void)
 {
-    u8 currentMapType = GetCurrentMapType();
-    switch (GetMapPairFadeToType(currentMapType, GetDestinationWarpMapHeader()->mapType))
+    const struct MapHeader *header = GetDestinationWarpMapHeader();
+    
+    if (header->regionMapSectionId != gMapHeader.regionMapSectionId && MapHasPreviewScreen(header->regionMapSectionId, MPS_TYPE_CAVE))
     {
-    case 0:
         FadeScreen(FADE_TO_BLACK, 0);
-        break;
-    case 1:
-        FadeScreen(FADE_TO_WHITE, 0);
+    }
+    else
+    {
+        switch (GetMapPairFadeToType(GetCurrentMapType(), header->mapType))
+        {
+        case 0:
+            FadeScreen(FADE_TO_BLACK, 0);
+            break;
+        case 1:
+            FadeScreen(FADE_TO_WHITE, 0);
+        }
     }
 }
 
@@ -478,9 +486,9 @@ static bool32 PaletteFadeActive(void)
     return gPaletteFade.active;
 }
 
-static bool32 WaitForWeatherFadeIn(void)
+bool32 WaitForWeatherFadeIn(void)
 {
-    if (IsWeatherNotFadingIn() == TRUE)
+    if (IsWeatherNotFadingIn() == TRUE && ForestMapPreviewScreenIsRunning())
         return TRUE;
     else
         return FALSE;
@@ -1270,6 +1278,7 @@ static void Task_EnableScriptAfterMusicFade(u8 taskId)
     }
 }
 
+<<<<<<< HEAD
 //stair warps
 static void GetStairsMovementDirection(u8 a0, s16 *a1, s16 *a2)
 {
@@ -1477,3 +1486,5 @@ void DoStairWarp(u16 metatileBehavior, u16 delay)
     Task_StairWarp(taskId);
 }
 
+=======
+>>>>>>> 41c3234eb719e21f5cd32af8daaff060fa7fbfd3

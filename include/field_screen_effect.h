@@ -41,7 +41,14 @@ void DoOrbEffect(void);
 void FadeOutOrbEffect(void);
 void WriteFlashScanlineEffectBuffer(u8 flashLevel);
 bool8 IsPlayerStandingStill(void);
+void FillPalBufferBlack(void);
+bool32 WaitForWeatherFadeIn(void);
+<<<<<<< HEAD
 void DoStairWarp(u16 metatileBehavior, u16 delay);
 bool8 IsDirectionalStairWarpMetatileBehavior(u16 metatileBehavior, u8 playerDirection);
+=======
+void FillPalBufferBlack(void);
+bool32 WaitForWeatherFadeIn(void);
+>>>>>>> 41c3234eb719e21f5cd32af8daaff060fa7fbfd3
 
 #endif // GUARD_FIELD_SCREEN_EFFECT_H
