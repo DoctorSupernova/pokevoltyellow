@@ -148,4 +148,8 @@
 	.include "src/faraway_island.o"
 	.include "src/trainer_hill.o"
 	.include "src/rayquaza_scene.o"
+<<<<<<< HEAD
     .include "src/map_preview.o"
+=======
+
+>>>>>>> 295081b1d7bdcad9b676829addc62c4e7d5c7ab0
