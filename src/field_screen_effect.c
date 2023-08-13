@@ -1278,7 +1278,6 @@ static void Task_EnableScriptAfterMusicFade(u8 taskId)
     }
 }
 
-<<<<<<< HEAD
 //stair warps
 static void GetStairsMovementDirection(u8 a0, s16 *a1, s16 *a2)
 {
@@ -1485,6 +1484,3 @@ void DoStairWarp(u16 metatileBehavior, u16 delay)
     gTasks[taskId].data[15] = delay;
     Task_StairWarp(taskId);
 }
-
-=======
->>>>>>> 41c3234eb719e21f5cd32af8daaff060fa7fbfd3
