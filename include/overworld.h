@@ -157,4 +157,10 @@ bool32 IsSendingKeysOverCable(void);
 void ClearLinkPlayerObjectEvents(void);
 u8 GetLastUsedWarpMapSectionId(void);
 
+enum {
+    REGION_HOENN,
+    REGION_KANTO,
+    REGION_SEVII
+};
+
 #endif // GUARD_OVERWORLD_H
