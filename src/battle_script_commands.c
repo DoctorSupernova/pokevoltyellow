@@ -5619,7 +5619,7 @@ static void Cmd_getmoneyreward(void)
         money = GetTrainerMoneyToGive(gTrainerBattleOpponent_A);
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
             money += GetTrainerMoneyToGive(gTrainerBattleOpponent_B);
-        ddMoney(&gSaveBlock1Ptr->money, money);
+        AddMoney(&gSaveBlock1Ptr->money, money);
     }
     else
     {
