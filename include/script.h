@@ -62,7 +62,14 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize);
 // srccmd.h
 void SetMovingNpcId(u16 npcId);
 
-// NEW
 u8* ReadWord(u8 index);
+
+// auto read signs
+void SetWalkingIntoSignVars(void);
+void MsgSetSignPost(void);
+void ResetFacingNpcOrSignPostVars(void);
+bool32 IsMsgSignPost(void);
+bool32 CanWalkAwayToCancelMsgBox(void);
+void ClearMsgBoxCancelableState(void);
 
 #endif // GUARD_SCRIPT_H

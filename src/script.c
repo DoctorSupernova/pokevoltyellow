@@ -5,6 +5,7 @@
 #include "util.h"
 #include "constants/event_objects.h"
 #include "constants/map_scripts.h"
+#include "field_message_box.h"
 
 #define RAM_SCRIPT_MAGIC 51
 
@@ -26,6 +27,8 @@ static u8 sGlobalScriptContextStatus;
 static struct ScriptContext sGlobalScriptContext;
 static struct ScriptContext sImmediateScriptContext;
 static bool8 sLockFieldControls;
+static u8 sMsgIsSignPost;
+static u8 sMsgBoxIsCancelable;
 
 extern ScrCmdFunc gScriptCmdTable[];
 extern ScrCmdFunc gScriptCmdTableEnd[];
@@ -476,3 +479,34 @@ u8* ReadWord(u8 index)
     return (T1_READ_PTR(&ctx->data[index]));
 }
 
+// auto read signposts
+void SetWalkingIntoSignVars(void)
+{
+    gWalkAwayFromSignInhibitTimer = 6;
+    sMsgBoxIsCancelable = TRUE;
+}
+
+bool32 IsMsgSignPost(void)
+{
+    return sMsgIsSignPost;
+}
+
+void ResetFacingNpcOrSignPostVars(void)
+{
+    sMsgIsSignPost = FALSE;
+}
+
+void MsgSetSignPost(void)
+{
+    sMsgIsSignPost = TRUE;
+}
+
+void ClearMsgBoxCancelableState(void)
+{
+    sMsgBoxIsCancelable = FALSE;
+}
+
+bool32 CanWalkAwayToCancelMsgBox(void)
+{
+    return sMsgBoxIsCancelable;
+}
