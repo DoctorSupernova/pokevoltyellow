@@ -69,6 +69,8 @@
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
 #include "constants/event_object_movement.h"
+#include "item.h"
+#include "constants/items.h"
 
 struct CableClubPlayer
 {
@@ -1547,6 +1549,19 @@ static bool8 RunFieldCallback(void)
     }
 
     return TRUE;
+}
+
+static bool8 CanLearnFlashInParty(void)
+{
+    u8 i;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (!GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL))
+            break;
+        if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG) && CanMonLearnTMHM(&gPlayerParty[i], ITEM_HM05 - ITEM_TM01))
+            return TRUE;
+    }
+    return FALSE;
 }
 
 void CB2_NewGame(void)
