@@ -43,6 +43,7 @@ static void TilesetAnim_MauvilleGym(u16);
 static void TilesetAnim_BikeShop(u16);
 static void TilesetAnim_BattlePyramid(u16);
 static void TilesetAnim_BattleDome(u16);
+static void TilesetAnim_Kanto_General(u16);
 static void QueueAnimTiles_General_Flower(u16);
 static void QueueAnimTiles_General_Water(u16);
 static void QueueAnimTiles_General_SandWaterEdge(u16);
@@ -73,6 +74,9 @@ static void QueueAnimTiles_MauvilleGym_ElectricGates(u16);
 static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
+static void QueueAnimTiles_Kanto_General_Flower(u16);
+static void QueueAnimTiles_Kanto_General_Water_Current_LandWatersEdge(u16);
+static void QueueAnimTiles_Kanto_General_SandWatersEdge(u16);
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -544,6 +548,63 @@ static const u16 *const sTilesetAnims_BattleDomeFloorLightPals[] = {
     gTilesetAnims_BattleDomePals0_3,
 };
 
+// palette: general 00
+const u16 gTilesetAnims_Kanto_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/flower/0.4bpp");
+const u16 gTilesetAnims_Kanto_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/flower/1.4bpp");
+const u16 gTilesetAnims_Kanto_General_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/flower/2.4bpp");
+const u16 gTilesetAnims_Kanto_General_Flower_Frame3[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/flower/3.4bpp");
+const u16 gTilesetAnims_Kanto_General_Flower_Frame4[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/flower/4.4bpp");
+
+const u16 *const gTilesetAnims_Kanto_General_Flower[] = {
+    gTilesetAnims_Kanto_General_Flower_Frame0,
+    gTilesetAnims_Kanto_General_Flower_Frame1,
+    gTilesetAnims_Kanto_General_Flower_Frame2,
+    gTilesetAnims_Kanto_General_Flower_Frame3,
+    gTilesetAnims_Kanto_General_Flower_Frame4
+};
+
+// palette: general 04
+const u16 gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/water_current_landwatersedge/0.4bpp");
+const u16 gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame1[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/water_current_landwatersedge/1.4bpp");
+const u16 gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame2[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/water_current_landwatersedge/2.4bpp");
+const u16 gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame3[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/water_current_landwatersedge/3.4bpp");
+const u16 gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame4[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/water_current_landwatersedge/4.4bpp");
+const u16 gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame5[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/water_current_landwatersedge/5.4bpp");
+const u16 gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame6[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/water_current_landwatersedge/6.4bpp");
+const u16 gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame7[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/water_current_landwatersedge/7.4bpp");
+
+const u16 *const gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge[] = {
+    gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame0,
+    gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame1,
+    gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame2,
+    gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame3,
+    gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame4,
+    gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame5,
+    gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame6,
+    gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge_Frame7
+};
+
+// palette: general 04
+const u16 gTilesetAnims_Kanto_General_SandWatersEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/sandwatersedge/0.4bpp");
+const u16 gTilesetAnims_Kanto_General_SandWatersEdge_Frame1[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/sandwatersedge/1.4bpp");
+const u16 gTilesetAnims_Kanto_General_SandWatersEdge_Frame2[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/sandwatersedge/2.4bpp");
+const u16 gTilesetAnims_Kanto_General_SandWatersEdge_Frame3[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/sandwatersedge/3.4bpp");
+const u16 gTilesetAnims_Kanto_General_SandWatersEdge_Frame4[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/sandwatersedge/4.4bpp");
+const u16 gTilesetAnims_Kanto_General_SandWatersEdge_Frame5[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/sandwatersedge/5.4bpp");
+const u16 gTilesetAnims_Kanto_General_SandWatersEdge_Frame6[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/sandwatersedge/6.4bpp");
+const u16 gTilesetAnims_Kanto_General_SandWatersEdge_Frame7[] = INCBIN_U16("data/tilesets/primary/kanto_general/anim/sandwatersedge/7.4bpp");
+
+const u16 *const gTilesetAnims_Kanto_General_SandWatersEdge[] = {
+    gTilesetAnims_Kanto_General_SandWatersEdge_Frame0,
+    gTilesetAnims_Kanto_General_SandWatersEdge_Frame1,
+    gTilesetAnims_Kanto_General_SandWatersEdge_Frame2,
+    gTilesetAnims_Kanto_General_SandWatersEdge_Frame3,
+    gTilesetAnims_Kanto_General_SandWatersEdge_Frame4,
+    gTilesetAnims_Kanto_General_SandWatersEdge_Frame5,
+    gTilesetAnims_Kanto_General_SandWatersEdge_Frame6,
+    gTilesetAnims_Kanto_General_SandWatersEdge_Frame7
+};
+
 static void ResetTilesetAnimBuffer(void)
 {
     sTilesetDMA3TransferBufferSize = 0;
@@ -834,6 +895,13 @@ void InitTilesetAnim_BattleDome(void)
     sSecondaryTilesetAnimCallback = TilesetAnim_BattleDome;
 }
 
+void InitTilesetAnim_Kanto_General(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 640;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Kanto_General;
+}
+
 static void TilesetAnim_Rustboro(u16 timer)
 {
     if (timer % 8 == 0)
@@ -1108,6 +1176,31 @@ static void TilesetAnim_BattleDome2(u16 timer)
 {
     if (timer % 4 == 0)
         BlendAnimPalette_BattleDome_FloorLightsNoBlend(timer / 4);
+}
+
+static void QueueAnimTiles_Kanto_General_Flower(u16 timer)
+{
+    AppendTilesetAnimToBuffer(gTilesetAnims_Kanto_General_Flower[timer % ARRAY_COUNT(gTilesetAnims_Kanto_General_Flower)], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(508)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Kanto_General_Water_Current_LandWatersEdge(u16 timer)
+{
+    AppendTilesetAnimToBuffer(gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge[timer % ARRAY_COUNT(gTilesetAnims_Kanto_General_Water_Current_LandWatersEdge)], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(416)), 48 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Kanto_General_SandWatersEdge(u16 timer)
+{
+    AppendTilesetAnimToBuffer(gTilesetAnims_Kanto_General_SandWatersEdge[timer % ARRAY_COUNT(gTilesetAnims_Kanto_General_SandWatersEdge)], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(464)), 18 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_Kanto_General(u16 timer)
+{
+    if (timer % 8 == 0)
+        QueueAnimTiles_Kanto_General_SandWatersEdge(timer / 8);
+    if (timer % 16 == 1)
+        QueueAnimTiles_Kanto_General_Water_Current_LandWatersEdge(timer / 16);
+    if (timer % 16 == 2)
+        QueueAnimTiles_Kanto_General_Flower(timer / 16);
 }
 
 static void QueueAnimTiles_Building_TVTurnedOn(u16 timer)
