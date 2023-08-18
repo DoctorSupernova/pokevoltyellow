@@ -1063,3 +1063,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/PalletTown/scripts.inc"
+
+	.include "data/maps/PalletTown_PlayersHouse_1F/scripts.inc"
+
+	.include "data/maps/PalletTown_PlayersHouse_2F/scripts.inc"
