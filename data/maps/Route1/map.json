@@ -15,8 +15,13 @@
   "connections": [
     {
       "map": "MAP_PALLET_TOWN",
-      "offset": 6,
+      "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_VIRIDIAN_CITY",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [

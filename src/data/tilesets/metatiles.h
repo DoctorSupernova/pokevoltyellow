@@ -219,3 +219,6 @@ const u16 gMetatileAttributes_Kanto_Building[] = INCBIN_U16("data/tilesets/prima
 
 const u16 gMetatiles_Kanto_GenericBuilding1[] = INCBIN_U16("data/tilesets/secondary/kanto_generic_building_1/metatiles.bin");
 const u16 gMetatileAttributes_Kanto_GenericBuilding1[] = INCBIN_U16("data/tilesets/secondary/kanto_generic_building_1/metatile_attributes.bin");
+
+const u16 gMetatiles_ViridianCity[] = INCBIN_U16("data/tilesets/secondary/viridian_city/metatiles.bin");
+const u16 gMetatileAttributes_ViridianCity[] = INCBIN_U16("data/tilesets/secondary/viridian_city/metatile_attributes.bin");

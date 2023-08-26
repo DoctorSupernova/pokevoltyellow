@@ -4414,7 +4414,7 @@
     {
       "id": "LAYOUT_PALLET_TOWN",
       "name": "PalletTown_Layout",
-      "width": 32,
+      "width": 50,
       "height": 28,
       "primary_tileset": "gTileset_Kanto_General",
       "secondary_tileset": "gTileset_PalletTown",
@@ -4444,12 +4444,22 @@
     {
       "id": "LAYOUT_ROUTE1",
       "name": "Route1_Layout",
-      "width": 38,
+      "width": 50,
       "height": 39,
       "primary_tileset": "gTileset_Kanto_General",
       "secondary_tileset": "gTileset_PalletTown",
       "border_filepath": "data/layouts/Route1/border.bin",
       "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_CITY",
+      "name": "ViridianCity_Layout",
+      "width": 44,
+      "height": 44,
+      "primary_tileset": "gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_ViridianCity",
+      "border_filepath": "data/layouts/ViridianCity/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianCity/map.bin"
     }
   ]
 }
