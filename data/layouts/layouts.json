@@ -4440,6 +4440,16 @@
       "secondary_tileset": "gTileset_Kanto_GenericBuilding1",
       "border_filepath": "data/layouts/PalletTown_PlayersHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/PalletTown_PlayersHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1",
+      "name": "Route1_Layout",
+      "width": 38,
+      "height": 39,
+      "primary_tileset": "gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_PalletTown",
+      "border_filepath": "data/layouts/Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Route1/map.bin"
     }
   ]
 }

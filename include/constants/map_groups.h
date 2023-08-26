@@ -66,6 +66,7 @@
 #define MAP_PALLET_TOWN                  (57 | (0 << 8))
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_1F (58 | (0 << 8))
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_2F (59 | (0 << 8))
+#define MAP_ROUTE1                       (60 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
