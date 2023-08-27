@@ -880,3 +880,14 @@ const struct Tileset gTileset_ViridianCity =
     .metatileAttributes = gMetatileAttributes_ViridianCity,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PewterCity =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PewterCity,
+    .palettes = gTilesetPalettes_PewterCity,
+    .metatiles = gMetatiles_PewterCity,
+    .metatileAttributes = gMetatileAttributes_PewterCity,
+    .callback = NULL,
+};

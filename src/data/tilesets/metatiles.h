@@ -222,3 +222,6 @@ const u16 gMetatileAttributes_Kanto_GenericBuilding1[] = INCBIN_U16("data/tilese
 
 const u16 gMetatiles_ViridianCity[] = INCBIN_U16("data/tilesets/secondary/viridian_city/metatiles.bin");
 const u16 gMetatileAttributes_ViridianCity[] = INCBIN_U16("data/tilesets/secondary/viridian_city/metatile_attributes.bin");
+
+const u16 gMetatiles_PewterCity[] = INCBIN_U16("data/tilesets/secondary/pewter_city/metatiles.bin");
+const u16 gMetatileAttributes_PewterCity[] = INCBIN_U16("data/tilesets/secondary/pewter_city/metatile_attributes.bin");

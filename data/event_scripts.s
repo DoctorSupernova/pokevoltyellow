@@ -1073,3 +1073,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/ViridianCity/scripts.inc"
 
 	.include "data/maps/Route2/scripts.inc"
+
+	.include "data/maps/PewterCity/scripts.inc"
