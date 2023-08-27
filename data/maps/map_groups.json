@@ -97,7 +97,8 @@
     "PalletTown_PlayersHouse_1F",
     "PalletTown_PlayersHouse_2F",
     "Route1",
-    "ViridianCity"
+    "ViridianCity",
+    "Route2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

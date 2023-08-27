@@ -4454,12 +4454,22 @@
     {
       "id": "LAYOUT_VIRIDIAN_CITY",
       "name": "ViridianCity_Layout",
-      "width": 44,
+      "width": 50,
       "height": 44,
       "primary_tileset": "gTileset_Kanto_General",
       "secondary_tileset": "gTileset_ViridianCity",
       "border_filepath": "data/layouts/ViridianCity/border.bin",
       "blockdata_filepath": "data/layouts/ViridianCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 50,
+      "height": 82,
+      "primary_tileset": "gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_ViridianCity",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
     }
   ]
 }
