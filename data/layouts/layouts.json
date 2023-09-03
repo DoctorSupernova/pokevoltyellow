@@ -4484,7 +4484,7 @@
     {
       "id": "LAYOUT_ROUTE22",
       "name": "Route22_Layout",
-      "width": 60,
+      "width": 64,
       "height": 44,
       "primary_tileset": "gTileset_Kanto_General",
       "secondary_tileset": "gTileset_ViridianCity",
