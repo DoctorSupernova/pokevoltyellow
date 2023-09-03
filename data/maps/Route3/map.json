@@ -1,12 +1,12 @@
 {
-  "id": "MAP_PEWTER_CITY",
-  "name": "PewterCity",
-  "layout": "LAYOUT_PEWTER_CITY",
-  "music": "MUS_RG_PEWTER",
-  "region_map_section": "MAPSEC_PEWTER_CITY",
+  "id": "MAP_ROUTE3",
+  "name": "Route3",
+  "layout": "LAYOUT_ROUTE3",
+  "music": "MUS_RG_ROUTE3",
+  "region_map_section": "MAPSEC_ROUTE_3",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_CITY",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE2",
-      "offset": 10,
-      "direction": "down"
+      "map": "MAP_PEWTER_CITY",
+      "offset": 0,
+      "direction": "left"
     },
     {
-      "map": "MAP_ROUTE3",
-      "offset": 0,
-      "direction": "right"
+      "map": "MAP_ROUTE2",
+      "offset": 48,
+      "direction": "left"
     }
   ],
   "object_events": [

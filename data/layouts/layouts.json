@@ -4490,6 +4490,16 @@
       "secondary_tileset": "gTileset_ViridianCity",
       "border_filepath": "data/layouts/Route22/border.bin",
       "blockdata_filepath": "data/layouts/Route22/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3",
+      "name": "Route3_Layout",
+      "width": 88,
+      "height": 54,
+      "primary_tileset": "gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_PewterCity",
+      "border_filepath": "data/layouts/Route3/border.bin",
+      "blockdata_filepath": "data/layouts/Route3/map.bin"
     }
   ]
 }
