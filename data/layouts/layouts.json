@@ -4455,7 +4455,7 @@
       "id": "LAYOUT_VIRIDIAN_CITY",
       "name": "ViridianCity_Layout",
       "width": 58,
-      "height": 44,
+      "height": 46,
       "primary_tileset": "gTileset_Kanto_General",
       "secondary_tileset": "gTileset_ViridianCity",
       "border_filepath": "data/layouts/ViridianCity/border.bin",
