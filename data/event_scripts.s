@@ -1079,3 +1079,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route22/scripts.inc"
 
 	.include "data/maps/Route3/scripts.inc"
+
+	.include "data/maps/PalletTown_PlayersHouse_2F_PlayersRoom/scripts.inc"

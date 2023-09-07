@@ -1,6 +1,8 @@
 {
   "group_order": [
-    "gMapGroup_TownsAndRoutes",
+    "gMapGroup_Kanto_TownsAndRoutes",
+    "gMapGroup_Kanto_Indoor_PalletTown",
+    "gMapGroup_Hoenn_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
@@ -35,7 +37,21 @@
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124"
   ],
-  "gMapGroup_TownsAndRoutes": [
+  "gMapGroup_Kanto_TownsAndRoutes": [
+    "PalletTown",
+    "ViridianCity",
+    "PewterCity",
+    "Route1",
+    "Route2",
+    "Route3",
+    "Route22"
+  ],
+  "gMapGroup_Kanto_Indoor_PalletTown": [
+    "PalletTown_PlayersHouse_1F",
+    "PalletTown_PlayersHouse_2F",
+    "PalletTown_PlayersHouse_2F_PlayersRoom"
+  ],
+  "gMapGroup_Hoenn_TownsAndRoutes": [
     "PetalburgCity",
     "SlateportCity",
     "MauvilleCity",
@@ -92,16 +108,7 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125",
-    "PalletTown",
-    "PalletTown_PlayersHouse_1F",
-    "PalletTown_PlayersHouse_2F",
-    "Route1",
-    "ViridianCity",
-    "Route2",
-    "PewterCity",
-    "Route22",
-    "Route3"
+    "Underwater_Route125"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

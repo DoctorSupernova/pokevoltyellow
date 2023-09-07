@@ -4424,7 +4424,7 @@
     {
       "id": "LAYOUT_PALLET_TOWN_PLAYERS_HOUSE_1F",
       "name": "PalletTown_PlayersHouse_1F_Layout",
-      "width": 13,
+      "width": 12,
       "height": 10,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_GenericBuilding1",
@@ -4435,7 +4435,7 @@
       "id": "LAYOUT_PALLET_TOWN_PLAYERS_HOUSE_2F",
       "name": "PalletTown_PlayersHouse_2F_Layout",
       "width": 12,
-      "height": 9,
+      "height": 6,
       "primary_tileset": "gTileset_Kanto_Building",
       "secondary_tileset": "gTileset_Kanto_GenericBuilding1",
       "border_filepath": "data/layouts/PalletTown_PlayersHouse_2F/border.bin",
@@ -4500,6 +4500,26 @@
       "secondary_tileset": "gTileset_PewterCity",
       "border_filepath": "data/layouts/Route3/border.bin",
       "blockdata_filepath": "data/layouts/Route3/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_TOWN_PLAYERS_HOUSE_2F_PLAYER_ROOM",
+      "name": "PalletTown_PlayersHouse_2F_PlayerRoom_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Kanto_Building",
+      "secondary_tileset": "gTileset_Kanto_GenericBuilding1",
+      "border_filepath": "data/layouts/PalletTown_PlayersHouse_2F_PlayerRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_PlayersHouse_2F_PlayerRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_TOWN_PLAYERS_HOUSE_2F_PLAYERS_ROOM",
+      "name": "PalletTown_PlayersHouse_2F_PlayersRoom_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Kanto_Building",
+      "secondary_tileset": "gTileset_Kanto_GenericBuilding1",
+      "border_filepath": "data/layouts/PalletTown_PlayersHouse_2F_PlayersRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_PlayersHouse_2F_PlayersRoom/map.bin"
     }
   ]
 }
