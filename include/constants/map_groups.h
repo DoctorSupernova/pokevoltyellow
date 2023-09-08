@@ -18,6 +18,8 @@
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_1F              (0 | (1 << 8))
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_2F              (1 | (1 << 8))
 #define MAP_PALLET_TOWN_PLAYERS_HOUSE_2F_PLAYERS_ROOM (2 | (1 << 8))
+#define MAP_PALLET_TOWN_RIVALS_HOUSE_1F               (3 | (1 << 8))
+#define MAP_PALLET_TOWN_RIVALS_HOUSE_2F               (4 | (1 << 8))
 
 // gMapGroup_Hoenn_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (2 << 8))

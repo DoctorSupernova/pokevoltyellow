@@ -49,7 +49,9 @@
   "gMapGroup_Kanto_Indoor_PalletTown": [
     "PalletTown_PlayersHouse_1F",
     "PalletTown_PlayersHouse_2F",
-    "PalletTown_PlayersHouse_2F_PlayersRoom"
+    "PalletTown_PlayersHouse_2F_PlayersRoom",
+    "PalletTown_RivalsHouse_1F",
+    "PalletTown_RivalsHouse_2F"
   ],
   "gMapGroup_Hoenn_TownsAndRoutes": [
     "PetalburgCity",
