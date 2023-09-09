@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_Kanto_GenericBuilding1",
       "border_filepath": "data/layouts/PalletTown_RivalsHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/PalletTown_RivalsHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_TOWN_RIVALS_HOUSE_2F_RIVALS_ROOM",
+      "name": "PalletTown_RivalsHouse_2F_RivalsRoom_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Kanto_Building",
+      "secondary_tileset": "gTileset_Kanto_GenericBuilding1",
+      "border_filepath": "data/layouts/PalletTown_RivalsHouse_2F_RivalsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown_RivalsHouse_2F_RivalsRoom/map.bin"
     }
   ]
 }

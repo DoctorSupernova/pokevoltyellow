@@ -1085,3 +1085,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/PalletTown_RivalsHouse_1F/scripts.inc"
 
 	.include "data/maps/PalletTown_RivalsHouse_2F/scripts.inc"
+
+	.include "data/maps/PalletTown_RivalsHouse_2F_RivalsRoom/scripts.inc"

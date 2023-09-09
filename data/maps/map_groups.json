@@ -51,7 +51,8 @@
     "PalletTown_PlayersHouse_2F",
     "PalletTown_PlayersHouse_2F_PlayersRoom",
     "PalletTown_RivalsHouse_1F",
-    "PalletTown_RivalsHouse_2F"
+    "PalletTown_RivalsHouse_2F",
+    "PalletTown_RivalsHouse_2F_RivalsRoom"
   ],
   "gMapGroup_Hoenn_TownsAndRoutes": [
     "PetalburgCity",
